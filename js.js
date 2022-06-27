@@ -13,7 +13,7 @@ $.ajax({
             <img class='cardPhoto' src='${card.photo_url}' alt='${card.name}'>
             <p class='cardPrice'><b>Price: </b>${card.price}$</p>
             <p class='cardDescription'><b>Description: </b>${card.description}</p>
-            <a href=''>Seller profile</a>
+            <a href='userProfile.html?id=${card.authorId}'>Seller profile</a>
             <button>Buy</button>
         `;
         $("#cards").append(elem);
